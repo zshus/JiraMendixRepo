@@ -11,9 +11,9 @@ jobs:
       - name: Login
         uses: atlassian/gajira-login@v3
         env:
-          JIRA_BASE_URL: ${{ https://solomontech-team.atlassian.net }}
-          JIRA_API_TOKEN: ${{ ATATT3xFfGF0Txn7Diz4zbdYV2fAT7MxjeIiUIcFXs0vVhj9uXMCibrIxjDmwKqTR9nZu8lk8S6cygBIOovvwAhUtNJHScTM2BdHiy0lkXWLpzAdr62f9u8GTFKDonyaPBaKsNc6gSUN4xGkKwVD16DUXYIR8OXe6ntCqz6LrmiZtPVk77SFi1M=A23CC8D3 }}
-          JIRA_USER_EMAIL: ${{ zhengshu@solomontech.net }}
+          JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+          JIRA_USER_EMAIL: ${{ secrets.JIRA_USER_EMAIL }}
 
       - name: Checkout main code
         uses: actions/checkout@v4
