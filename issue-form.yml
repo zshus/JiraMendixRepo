@@ -1,3 +1,7 @@
+- name: GitHub Issue Parser
+uses: stefanbuck/github-issue-parser@v3.2.1
+            
+
 name: '이슈 생성'
 description: 'Repo에 이슈를 생성하며, 생성된 이슈는 Jira와 연동됩니다.'
 labels: [feat]
